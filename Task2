@@ -1,0 +1,44 @@
+/* Student Grade */
+def get_letter_grade(average):
+    """Returns the letter grade based on the average."""
+    if average >= 90:
+        return "A", 4.0
+    elif average >= 80:
+        return "B", 3.0
+    elif average >= 70:
+        return "C", 2.0
+    elif average >= 60:
+        return "D", 1.0
+    else:
+        return "F", 0.0
+
+
+def main():
+    print("\n🎓 STUDENT GRADE TRACKER 🎓\n")
+
+    student_name = input("Enter student name: ")
+    subjects = int(input("How many subjects? "))
+
+    grades = []
+    for i in range(subjects):
+        grade = float(input(f"Enter grade for Subject {i + 1}: "))
+        grades.append(grade)
+
+
+    average_grade = sum(grades) / len(grades)
+
+
+    letter_grade, gpa = get_letter_grade(average_grade)
+
+
+    print("\n📋 Student Report:")
+    print(f"Student Name  : {student_name}")
+    print(f"Subjects Taken: {subjects}")
+    print(f"Average Grade : {average_grade:.2f}")
+    print(f"Letter Grade  : {letter_grade}")
+    print(f"GPA           : {gpa:.2f}")
+
+
+
+if __name__ == "__main__":
+    main()
