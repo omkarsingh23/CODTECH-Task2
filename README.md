@@ -1,9 +1,5 @@
 Name: OMKAR SINGH
-Company: CODTECH IT SOLUTIONS
-ID: CT12WDS45
-Domain: “PYTHON PROGRAMMING”
-Duration: DECEMBER 10th, 2024 to MARCH10th, 2025
-Mentor: Neela Santhosh Kumar
+
 
 Overview of the Project
 
